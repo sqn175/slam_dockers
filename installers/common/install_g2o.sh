@@ -10,7 +10,7 @@ if [ $1 ]; then
 fi
 
 PKG_NAME="g2o"
-echo -e "\033[32mInstalling ${PKG_NAME} ...\033[0m"
+echo -e "\033[32mInstalling ${PKG_NAME} ${VERSION} ...\033[0m"
 
 PKG_FILE="${PKG_NAME}-${VERSION}.tar.gz"
 DOWNLOAD_LINK="https://github.com/RainerKuemmerle/g2o/archive/${VERSION}.tar.gz"

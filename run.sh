@@ -17,7 +17,7 @@ XSOCK=/tmp/.X11-unix
 XAUTH=$HOME/.Xauthority
 
 VOLUMES="--volume=$XSOCK:$XSOCK:rw
-         --volume=$HOST_SOURCE_DIR:/home/slam/src:rw
+         --volume=$HOST_SOURCE_DIR:/home/slam/ws:rw
          --volume=$HOST_DATASET_DIR:/home/slam/dataset:rw
          --volume=$HOME/.Xauthority:/root/.Xauthority"
 

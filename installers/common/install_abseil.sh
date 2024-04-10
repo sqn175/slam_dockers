@@ -8,7 +8,7 @@ if [ $1 ]; then
 fi
 
 PKG_NAME="abseil"
-echo -e "\033[32mInstalling ${PKG_NAME} ...\033[0m"
+echo -e "\033[32mInstalling ${PKG_NAME} ${VERSION} ...\033[0m"
 
 apt-get -y update && \
     apt-get -y install --no-install-recommends \

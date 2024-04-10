@@ -40,11 +40,6 @@ apt-get -y update && \
 # Note(storypku)
 # The last two was required by `ldd /usr/local/qt5/plugins/platforms/libqxcb.so`
 
-if [ "${TARGET_ARCH}" = "aarch64" ]; then
-    bash ${COMM_DIR}/install_qt5base.sh
-    exit 0
-fi
-
 QT_VERSION_A=5.12
 QT_VERSION_B=5.12.2
 QT_VERSION_Z=$(echo "$QT_VERSION_B" | tr -d '.')

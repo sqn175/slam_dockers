@@ -18,7 +18,7 @@
 set -e
 
 PKG_NAME="pcl-pcl"
-echo -e "\033[32mInstalling ${PKG_NAME} ...\033[0m"
+echo -e "\033[32mInstalling ${PKG_NAME} ${VERSION} ...\033[0m"
 
 VERSION="1.10.1"
 if [ $1 ]; then

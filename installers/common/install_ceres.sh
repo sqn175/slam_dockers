@@ -1,19 +1,26 @@
 #!/usr/bin/env bash
 
-# This lib requires pre-installed OpenCV
+# ceres-solver requires pre-installed Eigen
 
 set -e
 
-VERSION="1.1-free"
+VERSION="1.14.0"
 if [ $1 ]; then
     VERSION="$1"
 fi
 
-PKG_NAME="DLib"
+PKG_NAME="ceres-solver"
 echo -e "\033[32mInstalling ${PKG_NAME} ${VERSION} ...\033[0m"
 
+apt-get -y update && \
+    apt-get -y install --no-install-recommends \
+    libgoogle-glog-dev \
+    libgflags-dev \
+    libatlas-base-dev \
+    libsuitesparse-dev
+
 PKG_FILE="${PKG_NAME}-${VERSION}.tar.gz"
-DOWNLOAD_LINK="https://github.com/dorian3d/DLib/archive/v${VERSION}.tar.gz"
+DOWNLOAD_LINK="https://github.com/ceres-solver/ceres-solver/archive/refs/tags/${VERSION}.tar.gz"
 
 pushd ${ARCHIVE_DIR}
 if [[ -e "${ARCHIVE_DIR}/${PKG_FILE}" ]]; then

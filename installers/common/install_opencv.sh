@@ -22,7 +22,7 @@
 set -e
 
 PKG_NAME="opencv"
-echo -e "\033[32mInstalling ${PKG_NAME} ...\033[0m"
+echo -e "\033[32mInstalling ${PKG_NAME} ${VERSION} ...\033[0m"
 
 INSTALL_CONTRIB="no"
 

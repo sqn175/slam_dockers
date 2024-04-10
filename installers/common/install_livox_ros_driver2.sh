@@ -8,7 +8,7 @@ if [ $1 ]; then
 fi
 
 PKG_NAME="livox_ros_driver2"
-echo -e "\033[32mInstalling ${PKG_NAME} ...\033[0m"
+echo -e "\033[32mInstalling ${PKG_NAME} ${VERSION} ...\033[0m"
 # Only return the first User_name.
 USER_NAME=$(awk -F':' '/\/home/ {print $1; exit}' /etc/passwd)
 

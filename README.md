@@ -5,9 +5,10 @@ A bunch of popular SLAM algorithms are well tested and listed as follows:
 
 | CI Status       | Dockerfile     | SLAM algorithm (commit link)       |
 | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ | 
-| ![Build Status](https://github.com/sqn175/slam_dev_docker/actions/workflows/docker-image-orb-slam.yml/badge.svg) | Dockerfile.orb-slam | [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) [ORB_SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) | 
-| ![Build Status](https://github.com/sqn175/slam_dev_docker/actions/workflows/docker-image-planar-slam.yml/badge.svg) | Dockerfile.r3live | [r3live](https://github.com/hku-mars/r3live), [FAST-LIO(2.0)](https://github.com/hku-mars/FAST_LIO/commit/5d9dc72523f465633d57bb9c3ac4e3f4fdaffb4c)      | 
-| ![Build Status](https://github.com/sqn175/slam_dev_docker/actions/workflows/docker-image-bad-slam.yml/badge.svg) | BAD-SLAM   | [BAD SLAM](https://github.com/ETH3D/badslam)                 |
+| ![Build Status](https://github.com/sqn175/slam_dev_docker/actions/workflows/docker-image-orb-slam.yml/badge.svg) | Dockerfile.orb-slam | [ORB_SLAM2](), [ORB_SLAM3]() | 
+| ![Build Status](https://github.com/sqn175/slam_dev_docker/actions/workflows/docker-image-r3live.yml/badge.svg) | Dockerfile.r3live | [r3live](), [FAST-LIO(2.0)](https://github.com/hku-mars/FAST_LIO/commit/5d9dc72523f465633d57bb9c3ac4e3f4fdaffb4c), [LIO-Livox](https://github.com/Livox-SDK/LIO-Livox/commit/2296e4bea59bcfec09624a6f052fd6bfbe2b1e6a)    | 
+| ![Build Status](https://github.com/sqn175/slam_dev_docker/actions/workflows/docker-image-faster-lio.yml/badge.svg) | Dockerfile.faster-lio  | [Faster-LIO](https://github.com/gaoxiang12/faster-lio/commit/6f6f1d6ea97071902a82c138f3359d4711873e2b), [DLIO](https://github.com/vectr-ucla/direct_lidar_inertial_odometry/commit/75c875f0088b498a9d6453f3ab003d6ab853ad85)                 |
+| ![Build Status](https://github.com/sqn175/slam_dev_docker/actions/workflows/docker-image-bad-slam.yml/badge.svg) | BAD-SLAM   | [BAD SLAM]()                 |
 
 
 ## Requirement

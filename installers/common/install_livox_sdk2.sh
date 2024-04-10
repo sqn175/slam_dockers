@@ -8,7 +8,7 @@ if [ $1 ]; then
 fi
 
 PKG_NAME="Livox-SDK2"
-echo -e "\033[32mInstalling ${PKG_NAME} ...\033[0m"
+echo -e "\033[32mInstalling ${PKG_NAME} ${VERSION} ...\033[0m"
 
 PKG_FILE="${PKG_NAME}-${VERSION}.tar.gz"
 DOWNLOAD_LINK="https://github.com/Livox-SDK/Livox-SDK2/archive/refs/tags/v${VERSION}.tar.gz"

@@ -16,12 +16,14 @@ apt-get -y update && \
     ros-${ROS_DISTRO}-tf \
     ros-${ROS_DISTRO}-message-filters \
     ros-${ROS_DISTRO}-image-transport \
-    ros-${ROS_DISTRO}-image-transport*
+    ros-${ROS_DISTRO}-image-transport* 
 
 # 2) Install dependencies via buiding from source
 # Eigen3 and OpenCV should be installed first as they may be 
 # the dependencies of other libs
 bash ${COMM_DIR}/install_eigen3.sh      3.3.4
+# Ceres should be installed only after eigen installed
+bash ${COMM_DIR}/install_ceres.sh       1.14.0
 # Install protobuf 3.5.1 before installing opencv
 # https://github.com/opencv/opencv/issues/18110
 bash ${COMM_DIR}/install_protobuf3.sh   3.5.1

@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image CI faster-lio
 
 on:
   push:
@@ -14,5 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build Docker image - r3live
-      run: ./build.sh ./dockerfiles/Dockerfile.r3live
+    - name: Build Docker image - faster-lio
+      run: ./build.sh ./dockerfiles/Dockerfile.faster-lio
