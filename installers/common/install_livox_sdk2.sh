@@ -22,7 +22,7 @@ fi
 tar xzf ${PKG_FILE}
 
 pushd "${PKG_NAME}-${VERSION}"
-    rm -rf build & mkdir build && cd build
+    mkdir build && cd build
     cmake ../
     make -j$(nproc)
     make install
